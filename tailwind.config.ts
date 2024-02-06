@@ -50,8 +50,8 @@ const config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#2E2E48",
+          foreground: "#fff",
         },
       },
       borderRadius: {
