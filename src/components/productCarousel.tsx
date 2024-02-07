@@ -29,7 +29,7 @@ interface props {
 
 export default function ProductCarousel(props: props) {
   return (
-    <Carousel className="flex absolute top-[48px] w-full lg:!flex-row !flex-col">
+    <Carousel className="flex md:static absolute md:top-[48px] w-full lg:!flex-row !flex-col">
       <CarouselContent>
         {props.products.map((product) => {
           return (
