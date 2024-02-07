@@ -1,3 +1,5 @@
+"use client";
+
 import ProductCarousel from "@/components/productCarousel";
 import { cn } from "@/lib/utils";
 import { Manrope } from "next/font/google";
@@ -72,11 +74,18 @@ export default function Home() {
       description:
         "This product is pretty cool, we think you should buy it now. Lorem ipsum dolor sit amet.",
     },
+    {
+      image:
+        "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg",
+      title: "Fuji Film Camera",
+      description:
+        "This product is pretty cool, we think you should buy it now. Lorem ipsum dolor sit amet.",
+    },
   ];
 
   return (
-    <main className="max-w-[1042px] md:w-full w-[calc(100%-160px)] flex flex-col gap-16 mr-4 md:ml-0 ml-16">
-      <div className="md:w-2/3 flex flex-col gap-6">
+    <main className="md:w-3/4 flex flex-col md:items-start gap-16 md:mx-0 mx-4">
+      <div className="flex flex-col gap-6">
         <h1 className="font-bold text-4xl">SH SHOP</h1>
 
         <p className={`${manrope.className} text-base  font-medium`}>
@@ -87,24 +96,37 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-4 md:w-full">
+      <div className={`flex relative flex-col gap-4 w-full h-[700px]`}
+      >
         <h1 className="font-bold text-2xl">Most Saled Products</h1>
         <ProductCarousel products={products} />
       </div>
 
-      <div className="flex flex-col gap-4 md:w-full">
+      <div className={`flex relative flex-col gap-4 w-full h-[700px]`}
+      >
         <h1 className="font-bold text-2xl">Recommended Products</h1>
         <ProductCarousel products={recommendedProducts} />
       </div>
 
-      <div className="flex flex-col gap-4 pb-16 md:w-2/3">
+      <div className="flex flex-col gap-4 pb-16">
         <h1 className="font-bold text-2xl">Our Bussines Journey</h1>
 
-        <img src="https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg" className="rounded-xl" />
-      
-        <p className={cn("font-medium text-base",manrope.className)}>
-          Back in the day, we were a pretty small company.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a cursus nisl. Aenean non ultrices dui, et suscipit diam. Aenean cursus auctor mauris ut mollis. Suspendisse eu diam mattis, finibus nisi ut, mattis nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eget lacus ante. Pellentesque a metus nibh. Donec quis magna in ex facilisis fermentum. Sed eu sodales arcu. Vestibulum eget sapien sed erat efficitur finibus. Aenean euismod sapien diam, eget dapibus ex mattis eget. Pellentesque scelerisque quam vitae est dignissim, eget elementum nulla sagittis.
+        <img
+          src="https://4kprojects.com/wp-content/uploads/2021/09/4K-Projects_Workplace_N-scaled.jpg"
+          className="rounded-xl"
+        />
+
+        <p className={cn("font-medium text-base", manrope.className)}>
+          Back in the day, we were a pretty small company. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Vivamus a cursus nisl. Aenean non
+          ultrices dui, et suscipit diam. Aenean cursus auctor mauris ut mollis.
+          Suspendisse eu diam mattis, finibus nisi ut, mattis nunc. Class aptent
+          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Nulla eget lacus ante. Pellentesque a metus nibh. Donec
+          quis magna in ex facilisis fermentum. Sed eu sodales arcu. Vestibulum
+          eget sapien sed erat efficitur finibus. Aenean euismod sapien diam,
+          eget dapibus ex mattis eget. Pellentesque scelerisque quam vitae est
+          dignissim, eget elementum nulla sagittis.
         </p>
       </div>
     </main>
