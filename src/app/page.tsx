@@ -111,11 +111,6 @@ export default function Home() {
       <div className="flex flex-col gap-4 pb-16">
         <h1 className="font-bold text-2xl">Our Bussines Journey</h1>
 
-        <img
-          src="https://4kprojects.com/wp-content/uploads/2021/09/4K-Projects_Workplace_N-scaled.jpg"
-          className="rounded-xl"
-        />
-
         <p className={cn("font-medium text-base", manrope.className)}>
           Back in the day, we were a pretty small company. Lorem ipsum dolor sit
           amet, consectetur adipiscing elit. Vivamus a cursus nisl. Aenean non
