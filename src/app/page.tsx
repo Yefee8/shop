@@ -96,13 +96,13 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={`flex md:relative flex-col gap-4 w-full md:h-auto h-[700px]`}
+      <div className={`flex relative flex-col gap-4 w-full md:h-auto h-[700px]`}
       >
         <h1 className="font-bold text-2xl">Most Saled Products</h1>
         <ProductCarousel products={products} />
       </div>
 
-      <div className={`flex md:relative flex-col gap-4 w-full md:h-auto h-[700px]`}
+      <div className={`flex relative flex-col gap-4 w-full md:h-auto h-[700px]`}
       >
         <h1 className="font-bold text-2xl">Recommended Products</h1>
         <ProductCarousel products={recommendedProducts} />
