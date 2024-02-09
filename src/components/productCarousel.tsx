@@ -68,12 +68,12 @@ export default function ProductCarousel(props: props) {
 
       <div className="w-full md:hidden flex justify-center mt-4 h-8">
         <div className="relative w-20 gap-4 flex">
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hover:bg-primary" />
+          <CarouselNext className="hover:bg-primary" />
         </div>
       </div>
-      <CarouselPrevious className="md:flex hidden" />
-      <CarouselNext className="md:flex hidden" />
+      <CarouselPrevious className="md:flex hidden hover:bg-primary !text-white" />
+      <CarouselNext className="md:flex hidden hover:bg-primary !text-white" />
     </Carousel>
   );
 }
