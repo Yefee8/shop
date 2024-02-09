@@ -161,7 +161,7 @@ export default function Dashboard() {
 
             <div className="text-xs flex gap-1 items-center font-bold text-secondary">
               <FaArrowUp className="text-xl" />
-              8% than last month
+              8% than last year
             </div>
           </div>
 
