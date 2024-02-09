@@ -225,7 +225,7 @@ export default function Dashboard() {
       <div className="px-4 md:w-full w-[calc(100%-36px)] py-3 bg-card rounded-[5px] flex flex-col gap-4">
         <div className="font-bold text-white">Latest Orders</div>
 
-        <div className="h-[321px] overflow-y-auto">
+        <div className="h-[321px]">
           <DataTable rows={rows} columns={columns} />
         </div>
       </div>

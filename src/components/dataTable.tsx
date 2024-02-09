@@ -15,10 +15,10 @@ export default function DataTable({
         })}
       </div>
 
-      <div className="flex flex-col gap-[28px] py-5">
+      <div className="flex flex-col gap-[28px] py-5 overflow-y-auto h-[280px]">
         {rows.map((rowItems: string[]) => {
           return (
-            <div className="flex justify-between text-base py-2.5 px-6 overflow-x-auto gap-4 no-scrollbar font-bold">
+            <div className="flex justify-between text-base py-2.5 px-6 gap-4 no-scrollbar font-bold">
               {rowItems.map((row) => {
                 return <div style={{
                   width:`calc(100%/${rowItems.length})`
