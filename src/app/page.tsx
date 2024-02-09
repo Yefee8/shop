@@ -84,7 +84,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="md:w-3/4 flex flex-col md:items-start gap-16 md:mx-0 mx-4">
+    <main className="md:w-[calc(100%-267px)] flex flex-col md:items-start gap-16 md:mx-0 mx-4">
       <div className="flex flex-col gap-6">
         <h1 className="font-bold text-4xl">SH SHOP</h1>
 
