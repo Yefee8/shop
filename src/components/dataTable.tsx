@@ -9,7 +9,9 @@ export default function DataTable({
     <div className="w-full flex flex-col rounded-[6px] border border-[#383854]">
       <div className="w-full flex justify-between text-base py-2.5 px-6 overflow-x-auto font-bold gap-4 no-scrollbar rounded-t-[6px] bg-[#383854]">
         {columns.map((column) => {
-          return <span>{column}</span>;
+          return <div style={{
+            width:`calc(100%/${columns.length})` 
+          }}>{column}</div>;
         })}
       </div>
 
@@ -18,7 +20,9 @@ export default function DataTable({
           return (
             <div className="flex justify-between text-base py-2.5 px-6 overflow-x-auto gap-4 no-scrollbar font-bold">
               {rowItems.map((row) => {
-                return <span>{row}</span>;
+                return <div style={{
+                  width:`calc(100%/${rowItems.length})`
+                }}>{row}</div>;
               })}
             </div>
           );
