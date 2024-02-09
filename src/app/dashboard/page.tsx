@@ -97,7 +97,7 @@ export default function Dashboard() {
   const columns = ["Products", "Order ID", "Amount"];
 
   return (
-    <div className="md:w-[calc(100%-267px)] flex flex-col pb-16 gap-4 md:items-start md:mx-0 mx-4">
+    <div className="md:w-[calc(100%-267px)] flex flex-col md:pb-0 pb-16 gap-4 md:items-start md:mx-0 mx-4">
       <h1 className="font-bold w-full text-[22px]">Dashboard</h1>
 
       <div className="md:w-full w-[calc(100%-36px)] flex flex-row flex-wrap gap-4 items-center justify-between">
@@ -222,7 +222,7 @@ export default function Dashboard() {
           })}
         </div>
       </div>
-      <div className="px-4 md:w-full w-[calc(100%-36px)] py-3 bg-card rounded-[5px] flex flex-col gap-4">
+      <div className="px-4 md:w-full w-[calc(100%-36px)] py-3 md:pb-3 pb-12 bg-card rounded-[5px] flex flex-col gap-4">
         <div className="font-bold text-white">Latest Orders</div>
 
         <div className="h-[321px]">
